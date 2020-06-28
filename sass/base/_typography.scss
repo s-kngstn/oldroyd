@@ -1,0 +1,56 @@
+body {
+  font-family: 'Source Sans Pro', Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-primary;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  color: $color-white;
+
+  &-main {
+    display: block;
+    font-size: 22rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom, $color-primary, $color-primary);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+
+  &::after {
+    display: block;
+    height: 0.2rem;
+    background-color: $color-primary;
+    content: ' ';
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  &--white {
+    background-image: linear-gradient(to bottom, $color-white, $color-white);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.section-meat-free__text-box {
+  p {
+    color: $color-white;
+  }
+}

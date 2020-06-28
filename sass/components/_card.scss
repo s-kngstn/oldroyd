@@ -1,0 +1,137 @@
+.card {
+  //FUNCTIONALITY OF CARD
+  perspective: 125rem;
+  -moz-perspective: 125rem;
+  position: relative;
+  height: 44rem;
+
+  &__side {
+    height: 44rem;
+    width: 100%;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: $border-corner;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-grey-light-1;
+    }
+
+    &--back {
+      background-color: $color-primary;
+      transform: rotateY(180deg);
+    }
+
+    //GIFT CARD STYLING
+    &--gift {
+      background-color: $color-primary;
+      transition: all 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-4px) scale(1.1);
+        background-color: $color-primary-light;
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //FRONT SIDE STYLING OF CARD
+  &__picture {
+    background-size: cover;
+    background-position: center;
+    height: 19rem;
+    // background-blend-mode: color;
+
+    &--1 {
+      background-image: url(/img/lunchmenu.png);
+    }
+
+    &--2 {
+      background-image: url(/img/dinnermenu.jpeg);
+    }
+
+    &--3 {
+      background-image: url(/img/drinksmenu.png);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 45%;
+  }
+
+  &__heading-span {
+    padding: 1rem 0.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.7),
+      rgba($color-primary, 0.7)
+    );
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 90%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+
+  //BACK SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__price-box {
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__price-value {
+    font-size: 15rem;
+    font-weight: 100;
+  }
+
+  &__price-voucher {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+}
