@@ -11,6 +11,10 @@ html {
 body {
   box-sizing: border-box; }
 
+::selection {
+  background-color: #4a606e;
+  color: #fff; }
+
 body {
   font-family: 'Source Sans Pro', Tahoma, Arial, sans-serif;
   font-weight: 400;
@@ -117,7 +121,8 @@ body {
   backdrop-filter: blur(5px);
   color: #fff; }
   .btn--blur::after {
-    background-color: rgba(255, 255, 255, 0.15); }
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); }
 
 .btn::after {
   content: '';
@@ -333,6 +338,33 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-top: 4rem; }
+  .main-nav li {
+    display: inline-block; }
+    .main-nav li a,
+    .main-nav li a:link,
+    .main-nav li a:visited {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      padding-bottom: 3px;
+      border-bottom: 2px transparent solid;
+      transition: all 0.2s ease; }
+      .main-nav li a:hover, .main-nav li a:active,
+      .main-nav li a:link:hover,
+      .main-nav li a:link:active,
+      .main-nav li a:visited:hover,
+      .main-nav li a:visited:active {
+        border-bottom: 2px #fff solid;
+        font-size: 1.8rem; }
 
 .section-meat-free {
   height: 100vh;

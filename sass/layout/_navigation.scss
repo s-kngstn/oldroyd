@@ -1,0 +1,30 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-top: 4rem;
+
+  li {
+    display: inline-block;
+
+    a,
+    a:link,
+    a:visited {
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      padding-bottom: 3px;
+      border-bottom: 2px transparent solid;
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:active {
+        border-bottom: 2px $color-white solid;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
