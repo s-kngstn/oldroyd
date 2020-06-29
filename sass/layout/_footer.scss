@@ -1,0 +1,40 @@
+footer {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 6rem;
+
+  p {
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: $color-primary-dark;
+  }
+
+  .footer-nav {
+    list-style: none;
+    float: left;
+  }
+
+  .social-links {
+    list-style: none;
+    float: right;
+  }
+}

@@ -1,0 +1,14 @@
+.section-events {
+  p {
+    a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-primary;
+    }
+
+    a:hover {
+      font-weight: bold;
+    }
+  }
+}

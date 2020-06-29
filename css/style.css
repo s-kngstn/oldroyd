@@ -60,6 +60,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
+.u-margin-bottom-small-medium {
+  margin-bottom: 3rem !important; }
+
 .u-margin-bottom-medium {
   margin-bottom: 6rem !important; }
 
@@ -221,6 +224,76 @@ body {
     border-radius: 3px;
     transition: all 0.2s; }
 
+.section-contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.section-contact li {
+  list-style: none;
+  text-align: center; }
+  .section-contact li a,
+  .section-contact li a:link,
+  .section-contact li a:visited {
+    text-decoration: none;
+    color: #4a606e; }
+  .section-contact li a:hover {
+    font-weight: bold; }
+
+.section-contact p {
+  text-align: center; }
+
+.section-contact iframe {
+  width: 100%;
+  height: 100%; }
+
+.mapouter {
+  position: relative;
+  right: 15%;
+  height: 451px;
+  width: 600px; }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 451px;
+  width: 600px; }
+
+.section-events p a,
+.section-events p a:link,
+.section-events p a:visited {
+  text-decoration: none;
+  color: #4a606e; }
+
+.section-events p a:hover {
+  font-weight: bold; }
+
+footer {
+  background-color: #4a606e;
+  color: #fff;
+  padding: 6rem; }
+  footer p {
+    text-align: center; }
+  footer li {
+    display: inline-block;
+    margin-right: 2rem; }
+    footer li:last-child {
+      margin-right: 0; }
+  footer a:link,
+  footer a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.2s; }
+  footer a:hover {
+    color: #1f2334; }
+  footer .footer-nav {
+    list-style: none;
+    float: left; }
+  footer .social-links {
+    list-style: none;
+    float: right; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -266,6 +339,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/meatfreemondays.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative; }
   .section-meat-free__text-box {
     position: absolute;
@@ -292,3 +366,7 @@ body {
 .section-vouchers {
   padding: 15rem 0 15rem 0;
   background-color: #f7f7f7; }
+
+.section-contact {
+  padding: 15rem 0 20rem 0;
+  background-color: #eee; }
