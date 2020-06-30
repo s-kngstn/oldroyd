@@ -4,5 +4,9 @@
     width: 90%;
     border-radius: $border-corner;
     transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }

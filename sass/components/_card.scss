@@ -36,6 +36,13 @@
         transform: translateY(-4px) scale(1.1);
         background-color: $color-primary-light;
       }
+
+      a,
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
     }
   }
 

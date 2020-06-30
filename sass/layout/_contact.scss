@@ -34,12 +34,21 @@
 .mapouter {
   position: relative;
   right: 15%;
-  height: 451px;
-  width: 600px;
+  height: 45.1rem;
+  width: 60rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    right: 0;
+  }
 }
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 451px;
-  width: 600px;
+  height: 45.1rem;
+  width: 60rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }

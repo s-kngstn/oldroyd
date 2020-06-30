@@ -1,9 +1,14 @@
+// MAIN NAVIGATION
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding-top: 4rem;
+
+  @include respond(tab-port) {
+    display: none;
+  }
 
   li {
     display: inline-block;
@@ -22,9 +27,55 @@
 
       &:hover,
       &:active {
-        border-bottom: 2px $color-white solid;
+        border-bottom: 2px $color-gold solid;
         font-size: 1.8rem;
       }
     }
   }
 }
+
+// STICKY NAVIGATION
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba($color-primary, 0.85);
+  z-index: 20;
+
+  li {
+    a,
+    a:link,
+    a:visited {
+      color: $color-white;
+      padding-bottom: 3px;
+    }
+  }
+
+  .main-nav {
+    padding: 2rem 2rem;
+  }
+}
+
+// // MOBILE NAVIGATION
+
+// .mobile-nav-icon {
+//   float: right;
+//   margin-top: 3.8rem;
+//   color: $color-gold;
+//   cursor: pointer;
+//   display: none;
+// }
+
+// @media only screen and (max-width: 767px) {
+//   .mobile-nav-icon {
+//     display: inline-block;
+//   }
+
+//   .main-nav {
+//     display: flex;
+//     flex-direction: column;
+//     border: 0;
+//   }
+// }

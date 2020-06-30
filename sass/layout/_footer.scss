@@ -22,19 +22,33 @@ footer {
     color: $color-white;
     text-transform: uppercase;
     transition: color 0.2s;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   a:hover {
-    color: $color-primary-dark;
+    color: $color-gold;
   }
 
   .footer-nav {
     list-style: none;
     float: left;
+
+    @include respond(tab-port) {
+      text-align: center;
+      float: none;
+    }
   }
 
   .social-links {
     list-style: none;
     float: right;
+
+    @include respond(tab-port) {
+      text-align: center;
+      float: none;
+    }
   }
 }

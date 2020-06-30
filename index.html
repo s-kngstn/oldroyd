@@ -11,15 +11,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+   
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon-16x16.png" />
+    <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/style.css" />
     <title>OLDROYD RESTAURANT | LONDON</title>
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <nav>
         <div class="row">
           <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#events">Catering & Events</a></li>
@@ -39,6 +42,8 @@
               >
             </li>
           </ul>
+          <!-- MOBILE NAV ICON
+          <a class="mobile-nav-icon"><i class="fas fa-bars fa-2x"></i></a> -->
         </div>
       </nav>
 
@@ -57,14 +62,14 @@
     </header>
 
     <main>
-      <section id="about" class="section-about">
+      <section id="about" class="section-about js--section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             About
           </h2>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
           <div class="col-1-of-2">
             <div class="composition">
               <img
@@ -103,7 +108,7 @@
           </h2>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-3">
           <div class="col-1-of-3">
             <div class="card">
               <div class="card__side card__side--front">
@@ -204,7 +209,7 @@
           </h2>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-2">
           <div class="col-1-of-2">
             <p class="u-margin-bottom-medium">
               No matter the location, size or budget, OLDROYD would love to
@@ -265,25 +270,32 @@
           </h2>
           <p class="u-margin-bottom-small u-margin-top-small">
             Gift a memorable & delicious dining experience to friends or family
-            - Perfect for any occasion
+          </p>
+          <p class="u-margin-bottom-small">
+            Perfect for any occasion
           </p>
           <div class="row u-margin-top-big">
             <div class="col-1-of-2">
               <div class="card">
                 <div class="card__side card__side--gift">
+                <a href="http://www.oldroydlondon.com/gift-vouchers/50-gift-voucher" target="_blank">
                   <div class="card__price-box">
                     <p class="card__price-value">£50</p>
                     <p class="card__price-voucher">Voucher</p>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
             <div class="col-1-of-2">
-              <div class="card">
+              <div class="card js--wp-4">
                 <div class="card__side card__side--gift">
-                  <div class="card__price-box">
+                  <a href="http://www.oldroydlondon.com/gift-vouchers/100"
+                  target="_blank">
+                    <div class="card__price-box">
                     <p class="card__price-value">£100</p>
                     <p class="card__price-voucher">Voucher</p>
+                  </a>
                   </div>
                 </div>
               </div>
@@ -362,121 +374,57 @@
           </div>
         </div>
       </section>
-
-      <footer>
-        <div class="row">
-          <div class="col-1-of-2">
-            <ul class="footer-nav">
-              <li><a href="#">Bookings</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li>
-                <a href="https://www.thedukeofrichmond.com/" target="_blank"
-                  >The Duke Of Richmond</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-1-of-2">
-            <ul class="social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/thedukeofrichmond/"
-                  target="_blank"
-                  ><i class="fab fa-facebook fa-2x"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://instagram.com/oldroydlondon" target="_blank"
-                  ><i class="fab fa-instagram fa-2x"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://twitter.com/oldroydlondon" target="_blank"
-                  ><i class="fab fa-twitter fa-2x"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Copyright &copy; 2020 by Oldroyd. All rights reserved.
-          </p>
-          <p>
-            Webpage crafted and designed with &#x2764; by
-            <a href="#">Sam Kingston</a>
-          </p>
-        </div>
-      </footer>
     </main>
 
-    <!-- <section class="grid-test">
+    <footer>
       <div class="row">
         <div class="col-1-of-2">
-          Col 1 of 2
+          <ul class="footer-nav">
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li>
+              <a href="https://www.thedukeofrichmond.com/" target="_blank"
+                >The Duke Of Richmond</a
+              >
+            </li>
+          </ul>
         </div>
         <div class="col-1-of-2">
-          Col 1 of 2
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.facebook.com/thedukeofrichmond/"
+                target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/oldroydlondon" target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://twitter.com/oldroydlondon" target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-
       <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
+        <p>
+          Copyright &copy; 2020 by Oldroyd. All rights reserved.
+        </p>
+        <p>
+          Webpage crafted and designed with &#x2764; by
+          <a href="#">Sam Kingston</a>
+        </p>
       </div>
+    </footer>
 
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-2-of-3">
-          Col 2 of 3
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-2-of-4">
-          Col 2 of 4
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-3-of-4">
-          Col 2 of 4
-        </div>
-      </div>
-    </section> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
