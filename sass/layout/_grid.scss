@@ -15,6 +15,10 @@
     max-width: 50rem;
   }
 
+  @include respond(iphone) {
+    max-width: 40rem;
+  }
+
   @include clearfix;
 
   [class^='col-'] {

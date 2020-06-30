@@ -18,6 +18,11 @@
   @include respond(tab-port) {
     padding: 5rem 0 15rem 0;
   }
+
+  @include respond(iphone) {
+    background-color: $color-primary;
+    padding: 5rem 0 5rem 0;
+  }
 }
 
 .section-events {
@@ -42,6 +47,11 @@
 
   @include respond(phone-large) {
     padding: 5rem 0 10rem 0;
+  }
+
+  @include respond(iphone) {
+    background-color: $color-primary;
+    padding: 5rem 0 5rem 0;
   }
 }
 

@@ -71,6 +71,10 @@ body {
     font-size: 22rem;
     font-weight: 300;
     letter-spacing: 0.5rem; }
+    @media (max-width: 46.875em) {
+      .heading-primary-main {
+        font-size: 18rem;
+        letter-spacing: 0.3rem; } }
     @media (max-width: 37.5em) {
       .heading-primary-main {
         font-size: 15rem;
@@ -95,6 +99,9 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.75rem; } }
+  @media (max-width: 23.4375em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary::after {
     display: block;
     height: 0.2rem;
@@ -235,6 +242,9 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media (max-width: 23.4375em) {
+      .card__side {
+        box-shadow: none; } }
     .card__side--front {
       background-color: #f7f7f7; }
     .card__side--back {
@@ -309,6 +319,29 @@ body {
   .card__price-voucher {
     font-size: 5rem;
     text-transform: uppercase; }
+  @media (max-width: 59.37em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        width: 100%;
+        position: relative;
+        border-radius: 3px; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 2rem; }
+      .card__price-box {
+        margin-bottom: 1rem; }
+      .card__price-value {
+        font-size: 15rem; } }
 
 .composition {
   position: relative; }
@@ -348,6 +381,11 @@ body {
   right: 15%;
   height: 45.1rem;
   width: 60rem; }
+  @media (max-width: 83.75em) {
+    .mapouter {
+      height: 35.1rem;
+      width: 50rem;
+      right: 0; } }
   @media (max-width: 59.37em) {
     .mapouter {
       width: 100%;
@@ -358,6 +396,11 @@ body {
   background: none !important;
   height: 45.1rem;
   width: 60rem; }
+  @media (max-width: 83.75em) {
+    .gmap_canvas {
+      height: 35.1rem;
+      width: 50rem;
+      right: 0; } }
   @media (max-width: 59.37em) {
     .gmap_canvas {
       width: 100%; } }
@@ -424,6 +467,9 @@ footer {
   @media (max-width: 59.37em) {
     .row {
       max-width: 50rem; } }
+  @media (max-width: 23.4375em) {
+    .row {
+      max-width: 40rem; } }
   .row::after {
     content: '';
     display: table;
@@ -471,7 +517,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  z-index: 200; }
   @media (max-width: 59.37em) {
     .main-nav {
       display: none; } }
@@ -524,6 +571,17 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    .section-meat-free__text-box a,
+    .section-meat-free__text-box a:link,
+    .section-meat-free__text-box a:visited {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      transition: font-size 0.3s ease; }
+    .section-meat-free__text-box a:hover {
+      font-size: 1.7rem; }
 
 .section-about {
   padding: 15rem 0;
@@ -541,6 +599,10 @@ footer {
   @media (max-width: 59.37em) {
     .section-menu {
       padding: 5rem 0 15rem 0; } }
+  @media (max-width: 23.4375em) {
+    .section-menu {
+      background-color: #4a606e;
+      padding: 5rem 0 5rem 0; } }
 
 .section-events {
   padding: 20rem 0;
@@ -560,6 +622,10 @@ footer {
   @media (max-width: 37.5em) {
     .section-meat-free {
       padding: 5rem 0 10rem 0; } }
+  @media (max-width: 23.4375em) {
+    .section-meat-free {
+      background-color: #4a606e;
+      padding: 5rem 0 5rem 0; } }
 
 .section-vouchers {
   padding: 15rem 0 15rem 0;

@@ -5,6 +5,7 @@
   align-items: center;
   list-style: none;
   padding-top: 4rem;
+  z-index: 200;
 
   @include respond(tab-port) {
     display: none;
@@ -57,25 +58,3 @@
     padding: 2rem 2rem;
   }
 }
-
-// // MOBILE NAVIGATION
-
-// .mobile-nav-icon {
-//   float: right;
-//   margin-top: 3.8rem;
-//   color: $color-gold;
-//   cursor: pointer;
-//   display: none;
-// }
-
-// @media only screen and (max-width: 767px) {
-//   .mobile-nav-icon {
-//     display: inline-block;
-//   }
-
-//   .main-nav {
-//     display: flex;
-//     flex-direction: column;
-//     border: 0;
-//   }
-// }

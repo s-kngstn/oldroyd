@@ -18,5 +18,20 @@
     transform: translate(-50%, -50%);
 
     text-align: center;
+
+    a,
+    a:link,
+    a:visited {
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      transition: font-size 0.3s ease;
+    }
+
+    a:hover {
+      font-size: 1.7rem;
+    }
   }
 }

@@ -37,6 +37,12 @@
   height: 45.1rem;
   width: 60rem;
 
+  @include respond(laptop-large) {
+    height: 35.1rem;
+    width: 50rem;
+    right: 0;
+  }
+
   @include respond(tab-port) {
     width: 100%;
     right: 0;
@@ -47,6 +53,12 @@
   background: none !important;
   height: 45.1rem;
   width: 60rem;
+
+  @include respond(laptop-large) {
+    height: 35.1rem;
+    width: 50rem;
+    right: 0;
+  }
 
   @include respond(tab-port) {
     width: 100%;
