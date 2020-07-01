@@ -57,8 +57,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 
   @if $breakpoint == tab-port {
-    @media (max-width: 59.37em) {
-      //950px
+    @media (max-width: 62.37em) {
+      //997px
       @content;
     }
   }
@@ -80,6 +80,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint == laptop-large {
     @media (max-width: 83.75em) {
       //1340px
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile-menu {
+    @media (min-width: 62.37em) {
+      //997px
       @content;
     }
   }
